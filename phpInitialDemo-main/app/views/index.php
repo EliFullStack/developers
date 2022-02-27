@@ -1,5 +1,11 @@
 <?php
 
+$tareas = [];
+if(file_exists("todo.json")){
+$json = file_get_contents("todo.json");
+$tareas = json_decode($json, true);
+} 
+
 
 ?>
 
@@ -19,7 +25,7 @@
     <div class="flex mt-10">
         <div class="w-1/3 text-2xl uppercase">Crear tarea
             <div>
-                <form action="" method="post">
+                <form action="new_todo.php" method="post">
                 <input class=" text-xl border p-2 pr-10 mr-2 shadow-md rounded italic w-96 mb-10 mt-5" type="text" name="todo_name" placeholder="Ingresar tarea">
                 <div class="mb-5">
                     <label class="text-lg py-3 pb-2" for="status">Estado</label>
@@ -46,10 +52,11 @@
                             <th class="border border-slate-300" scope="col">Acciones</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-base uppercase">
+                        <?php foreach ($tareas as $todoName => $tarea): ?>
                         <tr>
                             <th></th>
-                            <td class="border border-slate-300"></td>
+                            <td class="border border-slate-300"><?php echo $todoName; ?></td>
                             <td class="border border-slate-300"></td>
                             <td class="border border-slate-300"></td>
                             <td class="border border-slate-300" ></td>
@@ -58,6 +65,7 @@
                                 <a class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white" href="#">Eliminar</a>
                             </td>
                         </tr>
+                        <?php endforeach; ?>
                     </tbody>
                     </table>
             </div>
