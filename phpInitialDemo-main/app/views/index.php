@@ -61,8 +61,15 @@ $tareas = json_decode($json, true);
                             <td class="border border-slate-300"></td>
                             <td class="border border-slate-300" ></td>
                             <td class="w-48 pb-2">
-                                <a class="text-base bg-orange-500 hover:bg-orange-700 rounded font-semibold uppercase py-1 px-5 text-white" href="#">Editar</a>
-                                <a class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white" href="#">Eliminar</a>
+                                <div class="flex justify-around">
+                                <form action="">
+                                <button class="text-base bg-orange-500 hover:bg-orange-700 rounded font-semibold uppercase py-1 px-5 text-white">Editar</a>
+                                </form>
+                                <form action="delete.php" method="post">
+                                    <input type="hidden" name="todo_name" value="<?php echo $todoName; ?>">
+                                    <button class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white">Eliminar</a>
+                                </div>    
+                                </form>
                             </td>
                         </tr>
                         <?php endforeach; ?>
