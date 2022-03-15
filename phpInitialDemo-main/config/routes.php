@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 /**
  * Used to define the routes in the system.
@@ -12,8 +13,8 @@
 $routes = array(
 	'/test' => 'test#index',
 	'/tareas/listarTareas' => 'tareas#listarTareas',
-	'/tareas/listarTarea'=>'tareas#listarTarea',
 	'/tareas/nuevaTarea' => 'tareas#nuevaTarea',
-	'/tareas/actualizarTarea' => 'tareas#actualizarTarea',
-	'/tareas/eliminarTarea' => 'tareas#eliminarTarea',
+    '/tareas/listarTarea'=>'tareas#listarTarea',
+    '/tareas/actualizarTarea'=>'tareas#actualizarTarea',
+    '/tareas/eleminarTarea' => 'tareas#eliminarTarea'
 );
