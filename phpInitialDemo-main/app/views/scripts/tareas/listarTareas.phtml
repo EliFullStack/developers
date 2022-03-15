@@ -1,0 +1,76 @@
+<div class="container mx-auto mt-5 font-mono">
+    <h1 class="text-4xl font-bold m-5 text-center capitalize">
+    Una simple <span class="italic underline decoration-2">TO-DO</span> list
+  </h1>
+
+<div class="flex mt-10">
+    <div class="w-1/3 text-2xl uppercase">Descripción
+<form action= "/Developers/phpInitialDemo-main/web/tareas/nuevaTarea" method="post">
+    <input class="text-lg border p-2 pr-10 mr-2 shadow-md rounded italic w-96 my-5" type="text" name="todo_name" placeholder="Ingresar tarea">
+    <button class="text-lg bg-green-500 hover:bg-green-700 rounded font-semibold uppercase py-2 px-3 text-white" type="submit">Agregar Tarea</button>
+</form>
+</div>
+<br>
+<div class="w-2/3 text-2xl uppercase">Lista de tareas
+    <div class="mt-5">
+        <table class="border border-slate-300 rounded w-full">
+            <thead class="text-base capitalize py-5 pb-2 font-normal">
+                <tr>
+                    <th class="border border-slate-300" scope="col">Nro</th>
+                    <th class="border border-slate-300" scope="col">Despcripción</th>
+                    <th class="border border-slate-300" scope="col">Estado</th>
+                    <th class="border border-slate-300" scope="col">Hora Ini</th>
+                    <th class="border border-slate-300" scope="col">Hora Fin</th>
+                    <th class="border border-slate-300" scope="col">Usuario</th>
+                    <th class="border border-slate-300" scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="text-base uppercase">
+            <?php
+            //var_dump($this);
+            if(sizeof($this->tareas)>0){
+            
+            for($i=0; $i<sizeof($this->tareas); $i++){
+            $tarea = $this->tareas[$i];
+
+            ?>
+                <tr>
+                    <th></th>             
+                    <td><p><?php echo $tarea->getTitulo(); ?> </p></td>
+                    <td><p><?php echo $tarea->getEstado(); ?> </p></td>
+                    <td><p><?php echo $tarea->getHoraInicio(); ?> </p></td>
+                    <td><p><?php echo $tarea->getHoraFin(); ?> </p></td>
+                    <td><p><?php echo $tarea->getUsuario(); ?> </p></td>
+                    <td class="w-48 pb-2">
+                        <div class="flex justify-around">
+                        <form action="/Developers/phpInitialDemo-main/web/tareas/listarTarea" method="post">
+                        <input type="hidden" name="titulo" value="<?php echo $tarea->getTitulo(); ?>">
+                        <button class="text-base bg-orange-500 hover:bg-orange-700 rounded font-semibold uppercase py-1 px-5 text-white">Editar</a>
+                        </form>
+                        <form action="/Developers/phpInitialDemo-main/web/tareas/eleminarTarea" method="post">
+                        <input type="hidden" name="titulo" value="<?php echo $tarea->getTitulo(); ?>">
+                         <button class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white">Eliminar</a>
+                        </form>
+                        </div>
+                        </td>
+        
+        
+            <?php
+            }
+
+            }else{
+            ?>
+            <p>No hay tareas disponibles</p>
+            <?php
+            }
+    
+            ?>         
+            </tr>       
+            </tbody>
+
+    
+        </table>
+    </div>
+</div>
+</div>
+    
