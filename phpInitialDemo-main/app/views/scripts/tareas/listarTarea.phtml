@@ -1,5 +1,5 @@
 <div class= "container mx-auto mt-5 font-mono text-2xl uppercase"> Actualizar tarea
-<form class="mt-10 text-lg" action="/Developers/phpInitialDemo-main/web/tareas/actualizarTarea" method="post">
+<form class="mt-10 text-lg" action="<?php echo WEB_ROOT ?>/tareas/actualizarTarea" method="post">
     <label class="mr-5" for="">Título:</label>
     <input type="text" name="titulo" id="" value="<?php echo $this->tarea->getTitulo() ?> ">
     <br>
@@ -11,10 +11,10 @@
     </select>
     <br>
     <label class="mr-5" for="">Hora inicio:</label>
-    <input type="time" name="horaInicio" min="08:00" max="18:00" step="3600" id="" value="<?php echo $this->tarea->getHoraInicio() ?> ">
+    <input type="time" name="horaInicio" min="08:00" max="20:00" step="3600" id="" value="<?php echo $this->tarea->getHoraInicio() ?> ">
     <br>
     <label class="mr-5" for="">Hora fin:</label>
-    <input type="time" name="horaFin" min="08:00" max="18:00" step="3600" id="" value="<?php echo $this->tarea->getHoraFin() ?> ">
+    <input type="time" name="horaFin" min="08:00" max="20:00" step="3600" id="" value="<?php echo $this->tarea->getHoraFin() ?> ">
     <br>
     <label class="mr-5" for="">Usuario:</label>
     <input type="text" name="usuario" id="" value="<?php echo $this->tarea->getUsuario() ?> ">

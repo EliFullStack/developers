@@ -1,8 +1,14 @@
 {
-    "Tarea": {
-        "estado": "Pendiente",
+    "Probar si funciona el MVC   ": {
+        "estado": "En ejecuci\u00f3n",
+        "horaInicio": "17:00",
+        "horaFin": "18:00",
+        "usuario": "Eli "
+    },
+    "Revisar MVC  ": {
+        "estado": "Finalizada",
         "horaInicio": "",
         "horaFin": "",
-        "usuario": ""
+        "usuario": "Eli "
     }
 }
