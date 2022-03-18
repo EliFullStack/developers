@@ -31,7 +31,7 @@ class TareasController extends Controller {
         $tarea->setTitulo($todoName);
         $this->ipersistencia->agregarTarea($tarea);
 
-        header ("Location: /Developers/phpInitialDemo-main/web/tareas/listarTareas");
+        header ("Location: ".WEB_ROOT."/tareas/listarTareas");
 
     }
 
@@ -47,14 +47,14 @@ class TareasController extends Controller {
 
         $this->ipersistencia->actualizarTarea($tarea, $_POST['tituloAnterior']);
 
-        header ("Location: /Developers/phpInitialDemo-main/web/tareas/listarTareas");
+        header ("Location: ".WEB_ROOT."/tareas/listarTareas");
 
     }
 
     public function eliminarTareaAction(){
         //echo "hola desde eliminarTarea!";
         $this->ipersistencia->eliminarTarea($_POST['titulo']);
-        header ("Location: /Developers/phpInitialDemo-main/web/tareas/listarTareas");
+        header ("Location: ".WEB_ROOT."/tareas/listarTareas");
 
     }
 }
