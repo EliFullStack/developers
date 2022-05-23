@@ -16,5 +16,6 @@ $routes = array(
 	'/tareas/nuevaTarea' => 'tareas#nuevaTarea',
     '/tareas/listarTarea'=>'tareas#listarTarea',
     '/tareas/actualizarTarea'=>'tareas#actualizarTarea',
-    '/tareas/eleminarTarea' => 'tareas#eliminarTarea'
+    '/tareas/eleminarTarea' => 'tareas#eliminarTarea',
+    '/' => 'tareas#listarTareas'
 );
