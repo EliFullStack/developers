@@ -1,14 +1,26 @@
 {
-    "Probar si funciona el MVC   ": {
-        "estado": "En ejecuci\u00f3n",
-        "horaInicio": "17:00",
-        "horaFin": "18:00",
-        "usuario": "Eli "
-    },
-    "nueva tarea  ": {
+    "nueva tarea   ": {
         "estado": "Finalizada",
         "horaInicio": "",
         "horaFin": "",
-        "usuario": "Eli "
+        "usuario": "Eli  "
+    },
+    "tarea de prueba ": {
+        "estado": "Pendiente",
+        "horaInicio": "",
+        "horaFin": "",
+        "usuario": " Juan"
+    },
+    "Probar si funciona el MVC     ": {
+        "estado": "Pendiente",
+        "horaInicio": "",
+        "horaFin": "",
+        "usuario": "Elita   "
+    },
+    "corregir vistas ": {
+        "estado": "En ejecuci\u00f3n",
+        "horaInicio": "",
+        "horaFin": "",
+        "usuario": "Mar\u00eda "
     }
 }

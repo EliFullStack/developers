@@ -3,27 +3,31 @@
     Una simple <span class="italic underline decoration-2">TO-DO</span> list
   </h1>
 
-<div class="flex mt-10">
-    <div class="w-1/3 text-2xl uppercase">Descripción
+<div class="container"> 
+<div class="flex flex-col mt-10">
+    <div class="text-2xl uppercase">Descripción
 <form action= "<?php echo WEB_ROOT ?>/tareas/nuevaTarea" method="post">
     <input class="text-lg border p-2 pr-10 mr-2 shadow-md rounded italic w-96 my-5" type="text" name="todo_name" placeholder="Ingresar tarea">
     <button class="text-lg bg-green-500 hover:bg-green-700 rounded font-semibold uppercase py-2 px-3 text-white" type="submit">Agregar Tarea</button>
 </form>
 </div>
 <br>
-<div class="w-2/3 text-2xl uppercase">Lista de tareas
-    <div class="mt-5">
-        <table class="border border-slate-300 rounded w-full">
-            <thead class="text-base capitalize py-5 pb-2 font-normal">
+<div class="flex flex-col mb-10">
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                    <table class="min-w-full text-center">
+                        <thead class="border-b bg-gray-50">
                 <tr>
-                    <th class="border border-slate-300" scope="col">Nro</th>
-                    <th class="border border-slate-300" scope="col">Despcripción</th>
-                    <th class="border border-slate-300" scope="col">Estado</th>
-                    <th class="border border-slate-300" scope="col">Fecha</th>
-                    <th class="border border-slate-300" scope="col">Hora Ini</th>
-                    <th class="border border-slate-300" scope="col">Hora Fin</th>
-                    <th class="border border-slate-300" scope="col">Usuario</th>
-                    <th class="border border-slate-300" scope="col">Acciones</th>
+                    
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Nro</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Despcripción</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Estado</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Fecha</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Hora Ini</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Hora Fin</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Usuario</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">Acciones</th>
                 </tr>
             </thead>
             <tbody class="text-base uppercase">
@@ -36,7 +40,8 @@
 
             ?>
                 <tr>
-                    <th></th>             
+                    <th></th>
+                            
                     <td><p><?php echo $tarea->getTitulo(); ?> </p></td>
                     <td><p><?php echo $tarea->getEstado(); ?> </p></td>
                     <td><p><?php echo $tarea->getDate(); ?> </p></td>
@@ -73,6 +78,8 @@
     
         </table>
     </div>
+</div>
+</div>
 </div>
 </div>
     
