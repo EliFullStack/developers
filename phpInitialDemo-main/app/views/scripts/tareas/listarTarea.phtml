@@ -10,8 +10,11 @@
         <option value="Finalizada" <?php echo $this->tarea->getEstado()=="Finalizada" ? "selected": "" ?>>Finalizada</option>
     </select>
     <br>
+    <label class="mr-5" for="">Fecha:</label>
+    <input type="date" name="date" min="2022-01-01" max="2025-12-31" id="" value="<?php echo $this->tarea->getDate() ?> ">
+    <br>
     <label class="mr-5" for="">Hora inicio:</label>
-    <input type="time" name="horaInicio" min="08:00" max="20:00" step="3600" id="" value="<?php echo $this->tarea->getHoraInicio() ?> ">
+    <input type="time" name="horaInicio" min="08:00" max="20:00" id="" value="<?php echo $this->tarea->getHoraInicio() ?> ">
     <br>
     <label class="mr-5" for="">Hora fin:</label>
     <input type="time" name="horaFin" min="08:00" max="20:00" step="3600" id="" value="<?php echo $this->tarea->getHoraFin() ?> ">
