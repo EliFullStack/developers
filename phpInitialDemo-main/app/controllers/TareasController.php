@@ -41,6 +41,7 @@ class TareasController extends Controller {
 
         $tarea->setTitulo($_POST['titulo']);
         $tarea->setEstado($_POST['estado']);
+        $tarea->setDate($_POST['date']);
         $tarea->setHoraInicio($_POST['horaInicio']);
         $tarea->setHoraFin($_POST['horaFin']);
         $tarea->setUsuario($_POST['usuario']);

@@ -20,7 +20,7 @@ class PersistenciaJSON implements IPersistencia{
 
         $estado =$tarea->getEstado();
 
-        $this->jsonArray[$tarea->getTitulo()] =["estado"=>$estado, "horaInicio"=>$tarea->getHoraInicio(), "horaFin"=>$tarea->getHoraFin(), "usuario"=>$tarea->getUsuario()];
+        $this->jsonArray[$tarea->getTitulo()] =["estado"=>$estado, "date"=>$tarea->getDate() ,"horaInicio"=>$tarea->getHoraInicio(), "horaFin"=>$tarea->getHoraFin(), "usuario"=>$tarea->getUsuario()];
 
         file_put_contents("json/tareas.json", json_encode($this->jsonArray, JSON_PRETTY_PRINT));
 
@@ -41,9 +41,11 @@ class PersistenciaJSON implements IPersistencia{
         $tarea = new Tarea();
 
         $tareaJson = $this->jsonArray[$nombreTarea];
-
+       // var_dump($tareaJson);
+       // exit;
         $tarea->setTitulo($nombreTarea);
         $tarea->setEstado($tareaJson['estado']);
+        $tarea->setDate($tareaJson['date']);
         $tarea->setHoraInicio($tareaJson['horaInicio']);
         $tarea->setHoraFin($tareaJson['horaFin']);
         $tarea->setUsuario($tareaJson['usuario']);

@@ -3,6 +3,7 @@ class Tarea {
 
     private $titulo;
     private $estado;
+    private $date;
     private $horaInicio;
     private $horaFin;
     private $usuario;
@@ -25,6 +26,16 @@ class Tarea {
     public function setEstado($estado): void
     {
         $this->estado = $estado;
+    }
+
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    public function setDate($date): void
+    {
+        $this->date = $date;
     }
 
     public function getHoraInicio()
