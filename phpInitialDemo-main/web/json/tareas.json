@@ -1,11 +1,4 @@
 {
-    "testing     ": {
-        "estado": "En ejecuci\u00f3n",
-        "date": "21\/12\/2022",
-        "horaInicio": " 17:00  ",
-        "horaFin": " 18:00  ",
-        "usuario": "Elita    "
-    },
     "prueba2               ": {
         "estado": "Pendiente",
         "date": "31\/12\/2022",
@@ -13,11 +6,25 @@
         "horaFin": "20:00             ",
         "usuario": " Julia                              "
     },
-    "nueva tarea            ": {
+    "entregar developers ": {
+        "estado": "Finalizada",
+        "date": " 18\/07\/2022",
+        "horaInicio": " 18:00",
+        "horaFin": " 20:30",
+        "usuario": " Eli"
+    },
+    "testing       ": {
         "estado": "Pendiente",
-        "date": " 25\/01\/2022  ",
-        "horaInicio": " 16:00 ",
-        "horaFin": " 17:00 ",
-        "usuario": "Eli           "
+        "date": "21\/12\/2022  ",
+        "horaInicio": " 17:00    ",
+        "horaFin": " 18:00    ",
+        "usuario": "Eli "
+    },
+    "nueva tarea             ": {
+        "estado": "Pendiente",
+        "date": " 25\/01\/2022   ",
+        "horaInicio": " 16:00  ",
+        "horaFin": " 17:00  ",
+        "usuario": "Juan"
     }
 }
