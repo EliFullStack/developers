@@ -13,18 +13,18 @@
         "horaFin": " 20:30",
         "usuario": " Eli"
     },
-    "testing       ": {
-        "estado": "Pendiente",
-        "date": "21\/12\/2022  ",
-        "horaInicio": " 17:00    ",
-        "horaFin": " 18:00    ",
-        "usuario": "Eli "
-    },
     "nueva tarea             ": {
         "estado": "Pendiente",
         "date": " 25\/01\/2022   ",
         "horaInicio": " 16:00  ",
         "horaFin": " 17:00  ",
         "usuario": "Juan"
+    },
+    "testing        ": {
+        "estado": "Pendiente",
+        "date": "21\/12\/2022   ",
+        "horaInicio": " 17:00     ",
+        "horaFin": " 18:00     ",
+        "usuario": "Eli  "
     }
 }
