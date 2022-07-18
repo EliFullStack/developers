@@ -1,26 +1,23 @@
 {
-    "nueva tarea   ": {
-        "estado": "Finalizada",
-        "horaInicio": "",
-        "horaFin": "",
-        "usuario": "Eli  "
-    },
-    "tarea de prueba ": {
-        "estado": "Pendiente",
-        "horaInicio": "",
-        "horaFin": "",
-        "usuario": " Juan"
-    },
-    "Probar si funciona el MVC     ": {
-        "estado": "Pendiente",
-        "horaInicio": "",
-        "horaFin": "",
-        "usuario": "Elita   "
-    },
-    "corregir vistas ": {
+    "testing     ": {
         "estado": "En ejecuci\u00f3n",
-        "horaInicio": "",
-        "horaFin": "",
-        "usuario": "Mar\u00eda "
+        "date": "21\/12\/2022",
+        "horaInicio": " 17:00  ",
+        "horaFin": " 18:00  ",
+        "usuario": "Elita    "
+    },
+    "prueba2               ": {
+        "estado": "Pendiente",
+        "date": "31\/12\/2022",
+        "horaInicio": "17:00           ",
+        "horaFin": "20:00             ",
+        "usuario": " Julia                              "
+    },
+    "nueva tarea            ": {
+        "estado": "Pendiente",
+        "date": " 25\/01\/2022  ",
+        "horaInicio": " 16:00 ",
+        "horaFin": " 17:00 ",
+        "usuario": "Eli           "
     }
 }

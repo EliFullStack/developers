@@ -52,11 +52,11 @@
                         <div class="flex justify-around">
                         <form action="<?php echo WEB_ROOT ?>/tareas/listarTarea" method="post">
                         <input type="hidden" name="titulo" value="<?php echo $tarea->getTitulo(); ?>">
-                        <button class="text-base bg-orange-500 hover:bg-orange-700 rounded font-semibold uppercase py-1 px-5 text-white">Editar</a>
+                        <button class="text-base bg-orange-500 hover:bg-orange-700 rounded font-semibold uppercase py-1 px-5 text-white m-2">Editar</a>
                         </form>
                         <form action="<?php echo WEB_ROOT ?>/tareas/eleminarTarea" method="post">
                         <input type="hidden" name="titulo" value="<?php echo $tarea->getTitulo(); ?>">
-                         <button class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white">Eliminar</a>
+                         <button class="text-base bg-red-500 hover:bg-red-700 rounded font-semibold uppercase py-1 px-2 text-white m-2">Eliminar</a>
                         </form>
                         </div>
                         </td>
